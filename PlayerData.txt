@@ -1,2 +1,0 @@
-5,0,100%,5000,Combo here5,0,100%,5000,Combo here6,0,100%,6000,Combo here7,0,100%,7000,Combo here6,1,85%,5750,Combo here6,0,100%,6000,Combo here
-5,1,83%,4750,Combo here
