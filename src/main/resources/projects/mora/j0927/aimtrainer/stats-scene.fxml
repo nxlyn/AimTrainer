@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projects.mora.j0927.aimtrainer.Controllers.StatsController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@statsscreen.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="800.0" text="Standard Target Stats">
+         <font>
+            <Font name="Agency FB" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutY="236.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" text="Highscore">
+         <padding>
+            <Insets left="73.0" />
+         </padding>
+         <font>
+            <Font name="Agency FB" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutY="491.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="250.0" text="Average Score">
+         <padding>
+            <Insets left="73.0" />
+         </padding>
+         <font>
+            <Font name="Agency FB" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="averageScore" alignment="CENTER_RIGHT" layoutX="590.0" layoutY="490.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="137.0" text="0">
+         <font>
+            <Font name="Agency FB" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="highestScore" alignment="CENTER_RIGHT" layoutX="590.0" layoutY="236.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="137.0" text="0">
+         <font>
+            <Font name="Agency FB" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="400.0" text="Highest Target Accuracy">
+         <font>
+            <Font name="Agency FB" size="32.0" />
+         </font>
+         <padding>
+            <Insets left="73.0" />
+         </padding>
+      </Label>
+      <Label layoutY="533.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="400.0" text="Average Target Accuracy">
+         <font>
+            <Font name="Agency FB" size="32.0" />
+         </font>
+         <padding>
+            <Insets left="73.0" />
+         </padding>
+      </Label>
+      <Label fx:id="highestAccuracy" alignment="CENTER_RIGHT" layoutX="375.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="Agency FB" size="32.0" />
+         </font>
+         <padding>
+            <Insets left="73.0" />
+         </padding>
+      </Label>
+      <Label fx:id="averageAccuracy" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="533.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="177.0" text="0">
+         <font>
+            <Font name="Agency FB" size="32.0" />
+         </font>
+         <padding>
+            <Insets left="73.0" />
+         </padding>
+      </Label>
+      <Button fx:id="trashButton" layoutX="700.0" layoutY="700.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteStats" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #5C6F75;">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@trashbin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="returnButton" layoutY="700.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#menuReturn" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #5C6F75;">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@return.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

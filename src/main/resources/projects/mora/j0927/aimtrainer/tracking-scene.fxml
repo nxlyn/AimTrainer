@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="aimPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projects.mora.j0927.aimtrainer.Controllers.TrackingController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@grid.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="gridCountdown" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#startTraining" opacity="0.5" prefHeight="800.0" prefWidth="800.0" text="Click to Begin" textAlignment="CENTER" textFill="#33525b">
+         <font>
+            <Font name="Agency FB" size="140.0" />
+         </font>
+      </Label>
+      <Label fx:id="comboCounter" alignment="CENTER" layoutX="362.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="73.0" text="x0">
+         <font>
+            <Font name="Agency FB" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointsCounter" alignment="CENTER" layoutX="254.0" layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="110.0" text="0">
+         <font>
+            <Font name="Agency FB" size="38.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="437.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="110.0" text="Accuracy">
+         <font>
+            <Font name="Agency FB" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="254.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="110.0" text="Points">
+         <font>
+            <Font name="Agency FB" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="accuracyCounter" alignment="CENTER" layoutX="437.0" layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="110.0" text="0%">
+         <font>
+            <Font name="Agency FB" size="38.0" />
+         </font>
+      </Label>
+      <Circle fx:id="circle" fill="RED" layoutX="900.0" layoutY="400.0" onMouseExited="#trackingMissed" onMouseMoved="#targetTracking" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Button fx:id="restartButton" layoutX="900.0" layoutY="900.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#restartScene" prefHeight="74.0" prefWidth="145.0" style="-fx-background-color: #33525B;" text="Restart">
+         <font>
+            <Font name="Agency FB" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="menuButton" alignment="CENTER" layoutX="900.0" layoutY="900.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loadMenu" prefHeight="74.0" prefWidth="145.0" style="-fx-background-color: #33525B;" text="Menu">
+         <font>
+            <Font name="Agency FB" size="35.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="362.0" layoutY="-5.0" prefHeight="33.0" prefWidth="73.0" text="Combo">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

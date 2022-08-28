@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #5C6F75;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projects.mora.j0927.aimtrainer.Controllers.MenuController">
+   <children>
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="560.0" text="Jose's Aim Trainer">
+         <VBox.margin>
+            <Insets left="120.0" right="120.0" top="78.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Agency FB" size="94.0" />
+         </font>
+      </Label>
+      <Button fx:id="standardButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loadStandard" prefHeight="91.0" prefWidth="270.0" style="-fx-background-color: #6E858C;" text="Standard Training">
+         <VBox.margin>
+            <Insets left="265.0" right="265.0" top="33.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Agency FB" size="38.0" />
+         </font>
+      </Button>
+      <Button fx:id="trackingButton" layoutX="275.0" layoutY="235.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loadTracking" prefHeight="91.0" prefWidth="270.0" style="-fx-background-color: #6E858C;" text="Tracking Training">
+         <VBox.margin>
+            <Insets left="265.0" right="265.0" top="33.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Agency FB" size="38.0" />
+         </font>
+      </Button>
+      <Button fx:id="precisionButton" layoutX="275.0" layoutY="359.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loadPrecision" prefHeight="91.0" prefWidth="270.0" style="-fx-background-color: #6E858C;" text="Precision Training">
+         <VBox.margin>
+            <Insets left="265.0" right="265.0" top="33.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Agency FB" size="38.0" />
+         </font>
+      </Button>
+      <Button fx:id="statisticsButton" layoutX="275.0" layoutY="483.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loadStats" prefHeight="91.0" prefWidth="270.0" style="-fx-background-color: #6E858C;" text="Statistics">
+         <VBox.margin>
+            <Insets left="265.0" right="265.0" top="33.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Agency FB" size="38.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
